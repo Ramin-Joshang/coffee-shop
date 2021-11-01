@@ -17,3 +17,111 @@ body {
     direction: rtl;
     font-family: "vazir";
 }
+
+
+/* header */
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/bakcground-header.jpg) center no-repeat;
+    background-size: cover;
+}
+
+
+/* navbar */
+
+header .navbar {
+    width: 100%;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+header .navbar .header-list {
+    list-style: none;
+}
+
+header .navbar .header-list li {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+header .navbar .header-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .navbar .header-list li a::before {
+    position: absolute;
+    right: 0;
+    top: -12px;
+    width: 0;
+    height: 2px;
+    content: '';
+    box-shadow: 0 0 7px #cbce0b;
+    background-color: #e7f712;
+    transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+header .navbar .header-list li a.active::before {
+    width: 100%;
+}
+
+header .navbar .header-list li a:hover::before {
+    width: 100%;
+}
+
+.navbar .header-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar .header-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* End navbar */
+
+
+/* banner */
+
+header .header-banner {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+}
+
+header .header-banner h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+header .header-banner p {
+    font-size: 25px;
+}
+
+
+/* End banner */
+
+
+/* End header */
