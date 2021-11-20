@@ -366,3 +366,69 @@ header .header-banner p {
 
 
 /* End delight */
+
+
+/* footer */
+
+.footer {
+    width: 100%;
+    background-color: #141414;
+    padding: 100px 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 30px;
+}
+
+.footer .footer-aboutUs p {
+    width: 45%;
+    margin: auto;
+}
+
+.footer .footer-content {
+    width: 45%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-content .footer-newsLetter {
+    text-align: start;
+    width: 70%;
+}
+
+.footer .footer-content .footer-newsLetter input {
+    padding: 10px;
+}
+
+.footer .footer-content .footer-social {
+    width: 30%;
+}
+
+.footer .footer-content .footer-social ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    list-style: none;
+}
+
+.footer .footer-content .footer-social li {
+    font-size: 26px;
+}
+
+.footer .copy-right {
+    margin-top: 30px;
+    padding: 80px 0;
+    background-color: #333;
+}
+
+.footer .copy-right h2 {
+    margin-bottom: 20px;
+}
+
+
+/* End footer */
