@@ -1,0 +1,176 @@
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media screen and (max-width: 1200px) {
+    .coffee-menu .coffee-menu-content .coffee-menu-description p {
+        width: 450px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 0 30px;
+    }
+    header {
+        height: 75vh;
+    }
+    header .navbar {
+        padding: 0 10% !important;
+    }
+    header .navbar .header-list {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        text-align: center;
+        background-color: #000;
+        z-index: 10000;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+    }
+    header .navbar .header-list li {
+        display: block;
+        margin: 30px 0;
+    }
+    header .navbar .header-list li a:hover {
+        color: #e7f712;
+    }
+    header .navbar .header-list li a.active {
+        color: #e7f712;
+    }
+    header .navbar .header-list li a::before {
+        height: 0;
+    }
+    header .navbar .hamburger-btn {
+        display: block;
+    }
+    p {
+        width: 100% !important;
+        text-align: center;
+    }
+    .our-story .our-story-content {
+        flex-direction: column;
+    }
+    .our-story .our-story-content .our-story-description {
+        margin-bottom: 50px;
+    }
+    .our-story .our-story-content .our-story-image {
+        width: 80%;
+    }
+    .coffee-menu .coffee-menu-content {
+        flex-direction: column;
+    }
+    .coffee-menu .coffee-menu-content .coffee-menu-description {
+        margin-bottom: 50px;
+    }
+    .coffee-menu .coffee-menu-content .coffee-menu-image img {
+        width: calc(25% - 10px);
+        margin: 5px;
+        height: 200px;
+    }
+    .delight .delight-content {
+        flex-direction: column;
+    }
+    .delight .delight-content .delight-description {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .delight .delight-content .delight-image {
+        width: 100%;
+    }
+    .footer .footer-content {
+        width: 100%;
+    }
+    .footer .footer-content .footer-social ul {
+        justify-content: space-evenly;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    header {
+        height: 100vw;
+    }
+    h1 {
+        font-size: 40px !important;
+    }
+    p {
+        font-size: 20px !important;
+    }
+    .our-story .our-story-content .our-story-image {
+        width: 100%;
+    }
+    .coffee-menu .coffee-menu-content .coffee-menu-image img {
+        width: calc(50% - 10px);
+        margin: 5px;
+        height: 200px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+    header {
+        height: 100vw !important;
+    }
+    h1 {
+        font-size: 25px !important;
+    }
+    p {
+        font-size: 16px !important;
+    }
+    .coffee-menu .coffee-menu-content .coffee-menu-image img {
+        width: calc(100% - 10px);
+        margin: 5px;
+        height: 250px;
+    }
+    .delight .delight-content .delight-image {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .delight .delight-content .delight-image img {
+        width: 100%;
+        height: 250px;
+        margin: 10px 0 !important;
+    }
+    .footer .footer-content {
+        flex-direction: column;
+    }
+    .footer .footer-content .footer-newsLetter {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .footer .footer-content .footer-social {
+        width: 100%;
+    }
+}
+
+
+/* responsive navbar */
+
+header .navbar .closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+header .navbar .header-list.showHide {
+    display: block;
+    right: 0;
+}

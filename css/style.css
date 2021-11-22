@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-    width: 1300px;
+    width: 90%;
     margin: auto;
 }
 
@@ -89,6 +89,16 @@ header .navbar .header-list li a.active::before {
 
 header .navbar .header-list li a:hover::before {
     width: 100%;
+}
+
+header .navbar .hamburger-btn {
+    font-size: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
 }
 
 .navbar .header-logo {
